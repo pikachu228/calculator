@@ -68,9 +68,7 @@ int linelen1 = strlen(str_out);
     else{
         str_out[j] = ' ';
         ++j;
-        printf("str_in operator[%d]:%c\n", i,str_in[i]); 
-        printf("stek empty:%d\n",st_empty()); 
-        printf("Priority:%d\n",Priority(str_in[i])); 
+        
     if (!st_empty() && Priority(str_in[i]) <= Priority((char)st_top())){
         str_out[j]=(char)st_pop();
         str_out[j+1]=' ';
